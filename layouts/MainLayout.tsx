@@ -13,9 +13,9 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Nav from '@/components/Nav';
-import WorkspacesSidebar from '@/components/Workspaces/WorkspacesSidebar';
+import Sidebar from '@/components/Sidebar';
 
-const WorkspacesLayout: React.FC = ({ children }) => {
+const MainLayout: React.FC = ({ children }) => {
   const background = useColorModeValue('gray.200', 'gray.600');
   const { isOpen, onToggle, onClose } = useDisclosure();
 
@@ -47,12 +47,12 @@ const WorkspacesLayout: React.FC = ({ children }) => {
         <Drawer placement="left" isOpen={isOpen} onClose={onClose}>
           <DrawerOverlay>
             <DrawerContent>
-              <WorkspacesSidebar />
+              <Sidebar />
             </DrawerContent>
           </DrawerOverlay>
         </Drawer>
         <Box display={['none', 'block']}>
-          <WorkspacesSidebar />
+          <Sidebar />
         </Box>
         <Box h="100%" pt={5} px={5}>
           {children}
@@ -62,4 +62,4 @@ const WorkspacesLayout: React.FC = ({ children }) => {
   );
 };
 
-export default WorkspacesLayout;
+export default MainLayout;

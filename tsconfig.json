@@ -20,7 +20,6 @@
       "@/components/*": ["components/*"],
       "@/layouts/*": ["layouts/*"],
       "@/apollo/*": ["apollo/*"],
-      "@/models/*": ["models/*"],
       "@/config/*": ["config/*"],
       "@/hoc/*": ["hoc/*"],
       "@/db/*": ["db/*"],

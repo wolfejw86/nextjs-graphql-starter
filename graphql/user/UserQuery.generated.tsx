@@ -5,24 +5,14 @@ import * as Types from '../types';
 export type UserQueryVariables = Types.Exact<{ [key: string]: never }>;
 
 export type UserQuery = { __typename?: 'Query' } & {
-  user: { __typename?: 'User' } & {
-    workspaces: Array<
-      { __typename?: 'Workspace' } & Pick<
-        Types.Workspace,
-        'id' | 'workspaceName' | 'users'
-      >
-    >;
-  };
+  user: { __typename?: 'User' } & Pick<Types.User, 'id' | 'email'>;
 };
 
 export const UserDocument = gql`
   query User {
     user {
-      workspaces {
-        id
-        workspaceName
-        users
-      }
+      id
+      email
     }
   }
 `;

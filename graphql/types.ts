@@ -19,34 +19,15 @@ export type Query = {
   __typename?: 'Query';
   root?: Maybe<Scalars['String']>;
   user: User;
-  workspace?: Maybe<Workspace>;
-};
-
-export type QueryWorkspaceArgs = {
-  workspaceId: Scalars['String'];
 };
 
 export type Mutation = {
   __typename?: 'Mutation';
   root?: Maybe<Scalars['String']>;
-  createWorkspace: Workspace;
-};
-
-export type MutationCreateWorkspaceArgs = {
-  name: Scalars['String'];
-};
-
-export type Workspace = {
-  __typename?: 'Workspace';
-  id: Scalars['ID'];
-  users: Array<Scalars['String']>;
-  workspaceName: Scalars['String'];
-  formCount: Scalars['Int'];
 };
 
 export type User = {
   __typename?: 'User';
   id: Scalars['ID'];
   email: Scalars['String'];
-  workspaces: Array<Workspace>;
 };
