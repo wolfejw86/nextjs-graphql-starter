@@ -34,21 +34,11 @@
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
     "apollo-server-micro": "^2.19.2",
-    "formik": "^2.2.6",
     "framer-motion": "^3.2.2-rc.1",
     "graphql": "^15.5.0",
-    "mongodb": "^3.6.3",
     "next": "10.0.5",
-    "next-auth": "^3.1.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "sourced": "^2.0.8",
-    "sourced-repo-mongo": "^1.0.0",
-    "uuid": "^8.3.2",
-    "yup": "^0.32.8"
-  },
-  "peerOptionalDependencies": {
-    "mongodb": "^3.6.0"
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "1.20.1",
@@ -56,13 +46,8 @@
     "@graphql-codegen/typescript": "1.20.2",
     "@graphql-codegen/typescript-operations": "^1.17.14",
     "@graphql-codegen/typescript-react-apollo": "^2.2.1",
-    "@types/bcryptjs": "^2.4.2",
-    "@types/bluebird": "^3.5.33",
-    "@types/mongodb": "^3.6.3",
-    "@types/next-auth": "^3.1.21",
     "@types/node": "^14.14.22",
     "@types/react": "^17.0.0",
-    "@types/uuid": "^8.3.0",
     "@typescript-eslint/eslint-plugin": "^4.14.0",
     "@typescript-eslint/parser": "^4.14.0",
     "concurrently": "^5.3.0",
